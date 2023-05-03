@@ -1,9 +1,7 @@
 const express = require('express');
 const app = express();
-const dotenv = require('dotenv').config();
 const PORT = process.env.PORT || 3030;
-const dbConnection = require('./config/dbConnection')
-const userRoute = require('./routes/user')
+const apiRoute = require('./routes/api')
 
 
 
@@ -13,7 +11,7 @@ app.use(express.urlencoded({extended : false}));
 
 
 //  routes
-app.use('/api/user' ,userRoute )
+app.use('/api/' ,apiRoute)
 
 
 

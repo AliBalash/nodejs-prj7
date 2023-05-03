@@ -428,7 +428,6 @@ module.exports = new class apiController extends controller {
         try {
 
             const carIds = [1, 2, 3, 4, 5, 6, 7]; // Assuming carIds is an array of car ids passed in the request body
-            
             // Calculate toll for each car in parallel
             const tollData = await Promise.all(carIds.map(async (carId) => {
                 const tollOneStation = await this.tollCarOneStation(carId);

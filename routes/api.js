@@ -13,7 +13,7 @@ router.get('/carAllTimeLocateNearStationOne', apiController.carAllTimeLocateNear
 router.get('/allRoadmap', apiController.allRoadmap.bind(apiController));
 router.get('/tollCarAtOneDay/:carId', apiController.tollCarAtOneDay.bind(apiController));
 router.get('/allStation', apiController.allStation.bind(apiController));
-router.get('/tollAllCarEveryDay', apiController.tollAllCars.bind(apiController));
+router.get('/tollAllCars', apiController.tollAllCars.bind(apiController));
 router.get('/redOrBlueCar', apiController.redOrBlueCar.bind(apiController));
 
 // POST routes

@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 2020;
 const apiRoute = require('./routes/api')
 
 
@@ -20,7 +20,8 @@ app.use('/api/', apiRoute)
 
 //  run server 
 app.listen(PORT, () => {
-    console.log(`Server in running on PORT ${PORT}`);
+    console.log(`Server in running on PORT ${PORT} .`);
+    console.log('Please Befor Run Resfull Api Read (README.pdf) file.');
 });
 
 
